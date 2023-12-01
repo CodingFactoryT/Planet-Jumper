@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Coin
+  - DeadMarker
+  - Canvas
+  - GameOverPanel
+  - left_edge
+  - right_edge
+  - n_grass
+  - n_dirt
+  - n_slope
+  - n_grassdot
+  - grass_w_bl_u
+  - grassdot_w_bl_u
+  - slope_w_grass
+  - dirt_w_bl_u
+  - grassdot_w_bl_r
+  - small_mush_plat
+  - micro_mush_plat
+  - big_rock
+  - small_rock
+  - left_end
+  - MovingPlatform
+  - StartPlatform
+  - MobileCanvas
+  - PausePanel
+  - BuyErrorMessageText
+  - BuyAlreadyBoughtText
+  - BuyErrorMessage2Text
+  - LevelFinishLine
+  - LevelFinishedPanel
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Background
+  - Water
+  - UI
+  - Platforms
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 4079298387
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 2737712423
+    locked: 0
+  - name: SpaceShuttle
+    uniqueID: 2006033619
+    locked: 0

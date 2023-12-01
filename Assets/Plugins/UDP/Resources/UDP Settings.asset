@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -107981364, guid: 741884b37a0234d86bb740e55081cd5f, type: 3}
+  m_Name: UDP Settings
+  m_EditorClassIdentifier: 
+  UnityProjectID: feccd249-6ba9-4a4c-a07a-cedd538875d8
+  UnityClientID: nZadJ2NMuemz9FTIaEP9OA
+  UnityClientKey: 4cwiHEa9OkQrPT7cNPJ3Z8PYsSvid2so_MIORFlv9t0
+  UnityClientRSAPublicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwYf1CBx4nXhJir3qwOM+FPNZNm6AfcnytXA8YINlXygG3bFgHgP4E9gImD6LnSqGd9pv9+5fAgOm/Sk3ULNDslsnLsBcZGH7YnMHmGJd0W4gbIRgS2J4Q+yxgrXtervUGlODHI3JtuiIgQ9EnH0/ODUl2sTspcoy7KRSw+d5XtZO1aWcv0NzCH/rWa7TdxB4w3wQEh57yiPEGf97sCeZsDVk4JRKpiMrgaCw8Nn2KlJPlabZzQVk/gPEwSArhvW57MCL63Ps6Zz0Ffr4eOkU4Mk8k4JcgY9umtBSuhRW0K/Q3NdOk52UPtQTuNb+dEXmGRZVytm9UF5RdkxdV2RpAQIDAQAB
+  AppName: Planet Jumper
+  AppSlug: 09e2ab05-5488-4354-8509-9b36fda7f53c
+  AppItemId: 60fecf3383a07241c4bc3182
+  Permission: 
