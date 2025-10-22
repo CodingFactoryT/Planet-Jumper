@@ -36,9 +36,9 @@ public class PlayerMovement : MonoBehaviour
         if(SystemInfo.deviceType == DeviceType.Desktop)
         {
         Vector3 characterScale = transform.localScale;
-        if (Input.GetAxisRaw("Jump") > 0.001f && Mathf.Abs(rigidbody.velocity.y) < 0.001F) 
+        if (Input.GetAxisRaw("Jump") > 0.001f && Mathf.Abs(rigidbody.linearVelocity.y) < 0.001F) 
         {
-            rigidbody.AddForce(new Vector2(rigidbody.velocity.x, JumpHight), ForceMode2D.Impulse);
+            rigidbody.AddForce(new Vector2(rigidbody.linearVelocity.x, JumpHight), ForceMode2D.Impulse);
         }
 
 
@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
         }
         transform.localScale = characterScale;
         float directionX = Input.GetAxis("Horizontal"); 
-        rigidbody.velocity = new Vector2(directionX * speed, rigidbody.velocity.y);
+        rigidbody.linearVelocity = new Vector2(directionX * speed, rigidbody.linearVelocity.y);
         animator.SetFloat("speed", Mathf.Abs(directionX));
         }
 
@@ -63,9 +63,9 @@ public class PlayerMovement : MonoBehaviour
         if (SystemInfo.deviceType == DeviceType.Handheld)
         {
             Vector3 characterScale = transform.localScale;
-            if (CrossPlatformInputManager.GetAxisRaw("Jump") > 0.001f && Mathf.Abs(rigidbody.velocity.y) < 0.001F)
+            if (CrossPlatformInputManager.GetAxisRaw("Jump") > 0.001f && Mathf.Abs(rigidbody.linearVelocity.y) < 0.001F)
             {
-                rigidbody.AddForce(new Vector2(rigidbody.velocity.x, JumpHight), ForceMode2D.Impulse);
+                rigidbody.AddForce(new Vector2(rigidbody.linearVelocity.x, JumpHight), ForceMode2D.Impulse);
             }
 
 
@@ -81,13 +81,13 @@ public class PlayerMovement : MonoBehaviour
             }
             transform.localScale = characterScale;
             directionX = Mathf.SmoothDamp(directionX, CrossPlatformInputManager.GetAxisRaw("Horizontal"), ref velocityRef, smoothTime);
-            rigidbody.velocity = new Vector2(directionX * speed, rigidbody.velocity.y);
+            rigidbody.linearVelocity = new Vector2(directionX * speed, rigidbody.linearVelocity.y);
             animator.SetFloat("speed", Mathf.Abs(directionX));
         }
 
 
     }
-        private void OnCollisionEnter2D()  //hier ändern, falls andere Collisions existieren, die keine Platform sind
+        private void OnCollisionEnter2D()  //hier ï¿½ndern, falls andere Collisions existieren, die keine Platform sind
         {
         animator.SetBool("isJumping", false);
         }
